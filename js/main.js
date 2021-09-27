@@ -4,8 +4,7 @@ const links = [
         url: "week1/index.html"
     }
 ]
-
-var list = function(links) {
+function list (links) {
     for (var link in links) {
         document.getElementById('list-of-links').innerHTML += '<li>' + link + '</li>';
     }
