@@ -127,7 +127,10 @@
           li.append(checkbox, span, deleteButton)
   
           // Append nodes
+          if (!todo.archive){
           this.todoList.append(li)
+          }
+          
         })
       }
   
