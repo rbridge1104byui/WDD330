@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Week04/tictactoe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+    <div id="play">
+        <div class="row">
+            <div class="cell" id="one" ></div>
+            <div class="cell" id="two"></div>
+            <div class="cell" id="three"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="four"></div>
+            <div class="cell" id="five"></div>
+            <div class="cell" id="six"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="seven"></div>
+            <div class="cell" id="eight"></div>
+            <div class="cell" id="nine"></div>
+        </div>
+        </div>
+        <script>
+            const board= document.getElementsByClassName("cell");
+            const cell1 = document.getElementById("one");
+            const cell2 = document.getElementById("two");
+            const cell3 = document.getElementById("three");
+            const cell4 = document.getElementById("four");
+            const cell5 = document.getElementById("five");
+            const cell6 = document.getElementById("six");
+            
+            let tt = touchPoint.target;
+            
+            /*cell2.addeventlistner(click, mark(cell2));
+            cell3.addeventlistner(touchend, mark(cell3));
+            cell4.addeventlistner(touchend, mark(cell4));
+            cell5.addeventlistner(touchend, mark(cell5));
+            cell6.addeventlistner(touchend, mark(cell6));*/
+    
+           
+            
+    
+            function mark(tt){
+               /* for (let i = 0 ; i == 9; i++){
+                    if (i %2 == 0){
+                       document.getElementById(cell).innerhtml  = "X"
+                    }else{
+                        document.getElementById(cell).innerhtml  = "y"
+                    }
+                }*/
+                document.getElementById("cell1").innerhtml  = "X"
+                
+            }
+            board.addeventlistner("touchend", mark(tt));
+        </script>
+    
+</body>
+</html>
