@@ -111,8 +111,7 @@
           checkbox.checked = todo.complete
   
           const span = this.createElement('span')
-          span.contentEditable = true
-          span.classList.add('editable')
+          
   
           if (todo.complete) {
             const strike = this.createElement('s')
@@ -123,7 +122,7 @@
           }
   
           const deleteButton = this.createElement('button', 'delete')
-          deleteButton.textContent = 'Delete'
+          deleteButton.textContent = 'Archive'
           li.append(checkbox, span, deleteButton)
   
           // Append nodes
