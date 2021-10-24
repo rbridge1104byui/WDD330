@@ -99,6 +99,11 @@ class View {
   _resetInput() {
     this.input.value = ''
   }
+  
+  
+  _resetViewChoice() {
+    this.selectList.value = ''
+  }
 
   createElement(tag, className) {
     const element = document.createElement(tag)
@@ -151,7 +156,7 @@ class View {
         li.append(checkbox, span, deleteButton)
 
         // Append nodes
-        if (todo.archive) {
+        if (!todo.archive) {
           this.todoList.append(li)
         }
 
@@ -250,6 +255,7 @@ class Controller {
   handleToggleTodo = id => {
     this.model.toggleTodo(id)
   }
+  
 }
 
 const app = new Controller(new Model(), new View())
