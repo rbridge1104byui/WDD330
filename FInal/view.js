@@ -10,8 +10,10 @@
 // }
 
 function create_form(dv) {
+    let form = document.getElementById("show");
+    form.style.display = "initial";
     const ip_form = document.createElement("form");
-
+   
 
     //add IP address input
     let ip_input = document.createElement("input");
@@ -49,7 +51,7 @@ function display_api_return(data, type) {
     table.setAttribute('id', 'table');
     myTable.appendChild(table);
     const keys = Object.keys(data['data']['attributes']);
-    console.log(data['data']['attributes']);
+    
 
     let i = 0;
     let tab = document.getElementById('table');
@@ -76,8 +78,7 @@ function display_api_return(data, type) {
     while (i < key2.length) {
         let myVar = data['data']['attributes']['last_analysis_stats'][key2[i]]
 
-        console.log(key2[i]);
-        console.log(myVar);
+        
         let row = `<tr>
                                 <td>${key2[i]}</td>
                                 <td>${myVar}</td>

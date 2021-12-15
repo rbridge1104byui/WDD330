@@ -3,7 +3,12 @@
     background-color: #333;
     overflow: hidden;
   }
-  
+  form{
+    border: 2px solid green;
+    border-radius: 4px;
+    padding: 10px;
+
+  }
   /* Style the links inside the navigation bar */
   .topnav button {
     float: left;
@@ -29,11 +34,19 @@
   header{
       background-color: gray;
       padding: 20px;
+      background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 80%
+    );
   }
   body{
-      background-color: black;
-      color:green;
-      text-align: center;
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 80%
+    );
+    height: 100vh;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
   }
   h1 {
       color:white;
@@ -51,4 +64,29 @@
   th, td {
     border: 1px solid green;
     padding: 5px;
+  }
+  body::after {
+    
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+  form{
+    display: inline-block;
+    text-align: center;
+    width:430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 10px;
+    background: radial-gradient(circle, #555555, #535353, #505050, #4e4e4e, #4c4c4c);
+  }
+  }
+  a{
+    text-decoration: none;
+    color: yellow;
+    background-color: white;
   }

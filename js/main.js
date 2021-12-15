@@ -30,8 +30,20 @@ const links = [
       url:"Week07/index.html",
     },
     {
+      label:"Week-08",
+      url:"Week08/index.html",
+    },
+    {
+      label:"Week-09",
+      url:"Week09/index.html",
+    },
+    {
       label:"Week-11",
       url:"Week07/index.html",
+    },
+    {
+      label:"Final",
+      url:"Final/logdisplay.html",
     }
 
     

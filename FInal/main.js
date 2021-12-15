@@ -6,9 +6,10 @@ function showIP() {
     document.getElementById('myTable').innerHTML = "";
 
     let dv = "IP Address";
-    //get_answer();
-    create_form(dv);
+    
     let type = 'ip_addresses/';
+    create_form(dv);
+    
     
     let btn_action = document.getElementById("submitBtn");
     
