@@ -40,7 +40,7 @@ const links = [
   
     {
       label:"Final",
-      url:"Final/logdisplay.html",
+      url:"Final/index.html",
     }
 
     
